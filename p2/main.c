@@ -22,6 +22,6 @@ int main()
          r++;
          
      }
-     for(r=sum;r<sum+n;r++) printf("%d ",*r);
+     for(r=sum;r<sum+n;r++) printf(" %d",*r);
     return 0;
 }
