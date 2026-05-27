@@ -14,9 +14,13 @@ int main()
      for(int i=0;i<n;i++){
          scanf("%d",q+i);
      }
-         
+     q=arr2+n-1;
      for(int i=0;i<n;i++){
-         r[i]=p[i]+q[n-i-1];
+         *r=*p+*q;
+         p++;
+         q--;
+         r++;
+         
      }
      for(r=sum;r<sum+n;r++) printf("%d ",*r);
     return 0;
