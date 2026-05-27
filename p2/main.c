@@ -2,24 +2,22 @@
 
 int main()
 {
-     int n; int *p=nullptr; int arr1[30];int sum[30];
-     int arr2[30];int *q=nullptr;int *r=nullptr;
+     int n; int *p=nullptr; int arr1[20];int sum[20];
+     int arr2[20];int *q=nullptr;int *r=nullptr;
      scanf("%d",&n);
      p=arr1;
      q=arr2;
-     r=sum;
-     for(int i=0;i<n;i++){
-         scanf("%d",p+i);
+     ;
+     for( p=arr1;p<arr1+n;p++){
+         scanf("%d",p);
      }
-     for(int i=0;i<n;i++){
-         scanf("%d",q+i);
+     for(p=arr2;p<arr2+n;p++){
+         scanf("%d",p);
      }
-     q=arr2+n-1;
-     for(int i=0;i<n;i++){
+     ;
+     for(p=arr1, q=arr2+n-1, r=sum;p<arr1+n;p++,q--,r++){
          *r=*p+*q;
-         p++;
-         q--;
-         r++;
+        
          
      }
      for(r=sum;r<sum+n;r++) printf(" %d",*r);
